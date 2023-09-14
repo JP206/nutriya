@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body {
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(144, 198, 99);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    position: relative;
+    left: 25%;
+    bottom: 30px;
+}
+
+h1, .logo, .slogan{
+    display: inline-block;
+}
+
+.titulo{
+  background-image: 
+    linear-gradient(to left, rgb(121, 255, 72), rgb(0, 136, 20), rgb(121, 255, 72)); 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 660s linear infinite;
+  
+  font-family: "Lucida Handwriting";
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: -60px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.header{
+    background-color: rgba(0, 8, 255, 0.228);
+    height: 160px;
+    width: 100%;
+}
+
+.slogan{
+    position: relative;
+    color: white;
+    left: 30%;
+    width: 230px;
+    font-size: 25px;
+    background-color: rgb(55, 138, 137);
+    border: 1px solid rgba(0, 255, 208, 0.506);
+}
+
+.tabla{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 350px; 
+    height: 420px;
+}
+
+.familia{
+    position: relative;
+    top: 10px;
+    left: 2%;;
+    width: 400px; 
+    height: 420px;
+}
+
+.patio{
+    position: relative;
+    top: 10px;
+    left: 3%;;
+    width: 500px; 
+    height: 420px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.367);
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
+    justify-content: flex-start; /* Alinea las imágenes al principio de la fila */
+}
+
+.image-container img {
+    max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
+    margin-right: 10px; /* Espacio entre las imágenes (ajusta según tus necesidades) */
+}
+
+/* Consulta de medios para tamaños de pantalla más pequeños */
+@media (max-width: 768px) {
+    .image-container img {
+        flex: 1 1 calc(50% - 5px); /* Establece el ancho al 50% menos el espacio entre las imágenes */
+        margin-right: 5px; /* Espacio entre las imágenes en tamaños más pequeños (ajusta según tus necesidades) */
+        margin-bottom: 10px; /* Espacio vertical entre las imágenes en tamaños más pequeños (ajusta según tus necesidades) */
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://i.pinimg.com/564x/bc/8f/1f/bc8f1f1594498b3fcbf314c5fdaac02b.jpg" class="logo">
+        <h1 class="titulo">NUTRI YA!</h1>
+        <div class="slogan">¡Aprendé a comer <span style="color: rgb(255, 234, 0);">sano</span>, <span style="color: rgb(4, 0, 255);">rico</span> y <span style="color: violet;">divertido</span>!</div>
+        <br>
+
+        <div class="dropdown">
+            <button class="dropbtn">Información</button>
+            <div class="dropdown-content">
+            <a href="#">Info1</a>
+            <a href="#">Info2</a>
+            <a href="#">Info3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Juegos</button>
+            <div class="dropdown-content">
+            <a href="#">Juego1</a>
+            <a href="#">Juego2</a>
+            <a href="#">Juego3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Usuario</button>
+            <div class="dropdown-content">
+            <a href="#">Usuario1</a>
+            <a href="#">Usuario2</a>
+            <a href="#">Usuario3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Contacto</button>
+            <div class="dropdown-content">
+            <a href="#">Contacto1</a>
+            <a href="#">Contacto2</a>
+            <a href="#">Contacto3</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <img src="https://i.pinimg.com/564x/36/b1/4c/36b14cfed322e97e7b199a982b5d2da5.jpg" class="tabla">
+    <img src="https://i.pinimg.com/564x/0c/b5/4e/0cb54ea2b046ee7490351a341dd74e54.jpg" class="familia">
+    <img src="https://i.pinimg.com/564x/bc/f3/a0/bcf3a07ed12a77b86248228951112f44.jpg" class="patio">
+    </div>
+
+    <footer>Grupo CCFS®. 2023</footer>
+</body>
+</html>
